@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>જાતિ પ્રમાણપત્ર કાઉન્ટર - કચેરી માહિતી</title>
+<style>
+  :root{
+    --ink:#1a2332;
+    --paper:#fdfcf9;
+    --saffron:#ff9933;
+    --green:#138808;
+    --navy:#0b3d6b;
+    --line:#d8d3c4;
+    --muted:#5b6472;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family: 'Noto Sans Gujarati', 'Shruti', 'Arial', sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+  }
+  .tricolor-bar{
+    height:6px;
+    background: linear-gradient(to right, var(--saffron) 0 33%, #fff 33% 66%, var(--green) 66% 100%);
+  }
+  header{
+    padding:28px 20px 22px;
+    border-bottom:2px solid var(--navy);
+    text-align:center;
+  }
+  .emblem-line{
+    font-size:12px;
+    letter-spacing:1px;
+    color:var(--muted);
+    margin-bottom:6px;
+  }
+  header h1{
+    font-size:26px;
+    color:var(--navy);
+    font-weight:700;
+  }
+  header p.sub{
+    font-size:14px;
+    color:var(--muted);
+    margin-top:4px;
+  }
+  .counter-badge{
+    display:inline-block;
+    margin-top:10px;
+    background:var(--navy);
+    color:#fff;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:0.5px;
+    padding:5px 14px;
+    border-radius:3px;
+  }
+  main{
+    max-width:640px;
+    margin:0 auto;
+    padding:24px 20px 60px;
+  }
+  .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:18px 20px;
+    margin-bottom:18px;
+  }
+  .card h2{
+    font-size:14px;
+    color:var(--green);
+    border-bottom:1px solid var(--line);
+    padding-bottom:8px;
+    margin-bottom:12px;
+    font-weight:700;
+  }
+  .row{
+    display:flex;
+    justify-content:space-between;
+    padding:6px 0;
+    font-size:15px;
+  }
+  .row span:first-child{ color:var(--muted); }
+  .row span:last-child{ font-weight:600; text-align:right; }
+  ul.doc-list{
+    list-style:none;
+    font-size:15px;
+  }
+  ul.doc-list li{
+    padding:7px 0 7px 22px;
+    position:relative;
+    border-bottom:1px dashed var(--line);
+  }
+  ul.doc-list li:last-child{ border-bottom:none; }
+  ul.doc-list li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:var(--green);
+    font-weight:bold;
+  }
+  ol.steps{
+    font-size:15px;
+    padding-left:22px;
+  }
+  ol.steps li{
+    padding:6px 0;
+  }
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    font-size:14px;
+  }
+  .contact-grid div span{display:block; color:var(--muted); font-size:12px; margin-bottom:2px;}
+  .fee-highlight{
+    background:#fff8ec;
+    border:1px solid var(--saffron);
+    border-radius:4px;
+    padding:12px 16px;
+    font-size:14px;
+    margin-top:4px;
+  }
+  .helpline{
+    background:var(--navy);
+    color:#fff;
+    text-align:center;
+    padding:16px;
+    border-radius:4px;
+  }
+  .helpline a{ color:#fff; font-weight:700; font-size:20px; text-decoration:none; }
+  .helpline p{ font-size:12px; opacity:0.85; margin-top:4px;}
+  footer{
+    text-align:center;
+    font-size:12px;
+    color:var(--muted);
+    padding:18px;
+  }
+</style>
+</head>
+<body>
+
+<div class="tricolor-bar"></div>
+
+<header>
+  <div class="emblem-line">ગુજરાત સરકાર &nbsp;•&nbsp; જિલ્લા વહીવટી તંત્ર</div>
+  <h1>જાતિ પ્રમાણપત્ર કાઉન્ટર</h1>
+  <p class="sub">તાલુકા / મામલતદાર કચેરી, રાજકોટ</p>
+  <div class="counter-badge">કાઉન્ટર નંબર 4</div>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>કાઉન્ટર સમય</h2>
+    <div class="row"><span>સોમવાર – શુક્રવાર</span><span>સવારે 10:30 – સાંજે 6:00</span></div>
+    <div class="row"><span>શનિવાર</span><span>સવારે 10:30 – બપોરે 2:00</span></div>
+    <div class="row"><span>રવિવાર અને જાહેર રજા</span><span>બંધ</span></div>
+    <div class="row"><span>ટોકન વિતરણ</span><span>સવારે 10:00 થી</span></div>
+  </div>
+
+  <div class="card">
+    <h2>કોણ અરજી કરી શકે</h2>
+    <ul class="doc-list">
+      <li>આ તાલુકા / જિલ્લાના રહેવાસી</li>
+      <li>SC / ST / OBC / SEBC કેટેગરીના અરજદાર</li>
+      <li>નવી અરજી તેમજ રીન્યુઅલ / ડુપ્લિકેટ કોપી માટેની અરજી</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>જરૂરી દસ્તાવેજો</h2>
+    <ul class="doc-list">
+      <li>આધાર કાર્ડ (ઓરિજિનલ + ફોટોકોપી)</li>
+      <li>રેશન કાર્ડ / સરનામાનો પુરાવો</li>
+      <li>પિતા / પરિવારનું જૂનું જાતિ પ્રમાણપત્ર (જો ઉપલબ્ધ હોય)</li>
+      <li>શાળા છોડ્યાનું પ્રમાણપત્ર (જેમાં જાતિ દર્શાવેલ હોય)</li>
+      <li>પાસપોર્ટ સાઇઝ ફોટો (2)</li>
+      <li>સ્વ-ઘોષણા એફિડેવિટ (ફોર્મેટ કાઉન્ટર પર ઉપલબ્ધ)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>અરજી પ્રક્રિયા</h2>
+    <ol class="steps">
+      <li>કાઉન્ટર / ઇ-ધરા કિઓસ્ક પર ટોકન મેળવો</li>
+      <li>અરજી ફોર્મ ભરો (ફોર્મ કાઉન્ટર પર અથવા ઓનલાઇન પોર્ટલ પર ઉપલબ્ધ)</li>
+      <li>જરૂરી તમામ દસ્તાવેજો જોડો</li>
+      <li>કાઉન્ટર નંબર 4 પર સબમિટ કરો</li>
+      <li>તલાટી / સર્કલ ઇન્સ્પેક્ટર દ્વારા વેરિફિકેશન</li>
+      <li>પ્રમાણપત્ર મેળવવા માટે તૈયાર</li>
+    </ol>
+    <div class="fee-highlight">
+      <strong>પ્રક્રિયા સમય:</strong> 10–15 કાર્યકારી દિવસ &nbsp;|&nbsp;
+      <strong>ફી:</strong> ₹20 (અરજી) + ₹10 (પ્રમાણપત્રની નકલ)
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>સંબંધિત અધિકારી</h2>
+    <div class="contact-grid">
+      <div><span>નામ</span>શ્રી આર. કે. પટેલ</div>
+      <div><span>પદ</span>તલાટી-કમ-મંત્રી</div>
+      <div><span>કાઉન્ટર ફોન</span>0281-2XXXXXX</div>
+      <div><span>ઇમેઇલ</span>caste.cell.rajkot@gujarat.gov.in</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>અરજીની સ્થિતિ જુઓ</h2>
+    <div class="row"><span>ઓનલાઇન પોર્ટલ</span><span>digitalgujarat.gov.in</span></div>
+    <div class="row"><span>SMS અપડેટ</span><span>રજિસ્ટર્ડ મોબાઇલ પર મોકલવામાં આવશે</span></div>
+  </div>
+
+  <div class="helpline">
+    <span>ફરિયાદ / હેલ્પલાઇન</span><br>
+    <a href="tel:1800XXXXXXX">1800-XXX-XXXX</a>
+    <p>ટોલ-ફ્રી, સોમવારથી શનિવાર, સવારે 9 – સાંજે 6</p>
+  </div>
+
+</main>
+
+<footer>
+  છેલ્લે અપડેટ: 17 જૂન 2026 &nbsp;|&nbsp; નવીનતમ માહિતી માટે કાઉન્ટર પર QR સ્કેન કરો
+</footer>
+
+</body>
+</html>
